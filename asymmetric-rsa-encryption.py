@@ -4,7 +4,6 @@ from Crypto.Cipher import AES, PKCS1_OAEP
 
 # Generate RSA keys
 def generate_keys():
-    # Generate a new RSA key pair (public and private keys) with a key size of 2048 bits
     key = RSA.generate(2048)
     private_key = key.export_key()
     public_key = key.publickey().export_key()
